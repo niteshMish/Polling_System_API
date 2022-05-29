@@ -10,7 +10,7 @@ const OptionsSchema = new mongoose.Schema({
           type:Number,
            default:0
     },
-    optionOff:{
+    optionOf:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Question'
     }
