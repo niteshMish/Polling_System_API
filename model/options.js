@@ -10,6 +10,10 @@ const OptionsSchema = new mongoose.Schema({
           type:Number,
            default:0
     },
+    optionCanBeDeleted:{
+        type:Boolean,
+        default:true
+    },
     optionOf:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Question'

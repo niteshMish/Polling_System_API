@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://localhost/polling_API_db');
+ require('dotenv');
+mongoose.connect(process.env.CONNECT);
 
 
 const db = mongoose.connection;
